@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade Calculator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="calculator">
+  <h1>Grade Calculator</h1>
+  <form id="gradeForm">
+    <div class="form-group">
+      <h2>Attendance (10%)</h2>
+        <label for="attendance">Attendance (100%)</label>
+        <input type="number" id="attendance" min="0" max="100">
+    </div>
+    <div class="form-category">
+      <h2>Engineer Performance (Build Track - 55%)</h2>
+      <div class="form-group">
+        <label for="eval1">Eval 1 (12% of Build Track)</label>
+        <input type="number" id="eval1" min="0" max="100">
+      </div>
+      <div class="form-group">
+        <label for="eval2">Eval 2 (18% of Build Track)</label>
+        <input type="number" id="eval2" min="0" max="100">
+      </div>
+      <div class="form-group">
+        <label for="product">Product (70% of Build Track)</label>
+        <input type="number" id="product" min="0" max="100">
+      </div>
+    </div>
+    <div class="form-category">
+      <h2>Learnings and Principles (Study Track - 15%)</h2>
+      <div class="form-group">
+        <label for="essay1">Essay 1 (50% of Study Track)</label>
+        <input type="number" id="essay1" min="0" max="100">
+      </div>
+      <div class="form-group">
+        <label for="essay2">Essay 2 (50% of Study Track)</label>
+        <input type="number" id="essay2" min="0" max="100">
+      </div>
+    </div>
+    <div class="form-category">
+      <h2>Application of Techniques (Techniques Track - 15%)</h2>
+      <div class="form-group">
+        <label for="various">Various (100% of Techniques Track)</label>
+        <input type="number" id="various" min="0" max="100">
+      </div>
+    </div>
+    <div class="form-group">
+      <h2>Final Exam (5%)</h2>
+      <label for="finalExam">Final Exam (100%)</label>
+      <input type="number" id="finalExam" min="0" max="100">
+    </div>
+    <button type="button" onclick="calculateGrade()">Calculate</button>
+  </form>
+  <div id="result"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
